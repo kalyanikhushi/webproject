@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Website</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <!-- Your existing HTML content here -->
+
+    <!-- Location Popup -->
+    <div class="popup" id="locationPopup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Select Your Location</h2>
+            <form>
+                <!-- Your location selection form fields here -->
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Your existing HTML content continues -->
+</body>
+</html>

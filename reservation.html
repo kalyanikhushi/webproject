@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    
+        
+        <h1>Hotel Reservation</h1>
+    </header>
+    
+    <main>
+    <section class="reservation-form">
+        <h2>Make a Reservation</h2>
+        <form action="confirmation.html" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type" required>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <button type="submit" class="submit-btn">Submit Reservation</button>
+        </form>
+    </section>
+    </main>
+</header>
+
+
+    <footer>
+        <p>&copy; 2024 Your Hotel. All rights reserved.</p>
+    </footer>
+</body>
+</html>

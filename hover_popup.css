@@ -1,0 +1,22 @@
+.popup-details {
+    display: none;
+    position: absolute;
+    top: 50px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999; 
+}
+
+.popup-details h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.popup-details p {
+    margin-bottom: 10px;
+}
