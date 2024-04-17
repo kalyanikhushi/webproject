@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+        
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            ;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333333;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #007bff;
+        }
+
+        
+        .hero {
+            background-color: #0b8d93; 
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffffff; 
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ffffff; 
+            color: #0b8d93; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #f0f0f0; 
+        }
+
+        
+        .container {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-bottom: 10px; 
+            padding-left: 10px; 
+            position: relative;
+        }
+
+        .image {
+            display: inline-block;
+            margin: 10px;
+            vertical-align: top;
+        }
+
+        
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #333333;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .arrow:hover {
+            color: #007bff;
+        }
+
+        .arrow.left {
+            left: 10px;
+        }
+
+        .arrow.right {
+            right: 10px;
+        }
+
+        
+        footer {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        
+        <img src="images/logo.jpg" alt="Travel Agency Logo" class="logo">
+        <nav class="navbar">
+            <ul>
+                <li><a href="service.html" class="navbtn">Services</a></li>
+                <li><a href="tour.html" class="navbtn">Tour Packages</a></li>
+                <li><a href="booking.html" class="navbtn">Booking</a></li>
+                <li><a href="testimonal.html" class="navbtn">Testimonials</a></li>
+                <li><a href="login.html" class="navbtn">Login</a></li>
+                <li><a href="signup.html" class="navbtn">Sign Up</a></li>
+                <li><a href="contact.html" class="navbtn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="left-container">
+            <div class="left-content">
+                <h1>Discover Your Dream Destinations</h1>
+                <p>
+                    Explore the world's most breathtaking locations and create unforgettable memories.
+                </p>
+                <button class="contact-btn"><a href="contact.html" class="contact-btn">Contact Us</a></button>
+                <button class="booking-btn"><a href="booking.html" class="booking-btn">Book Now</a></button>
+
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="services">
+        <div class="service">
+           <a href="flight_booking.html">
+            <h2>Flight Booking</h2>
+            <p>Book flights to your desired destinations with ease.</p>
+        </div>
+        <div class="service">
+            <a href="reservation.html"> 
+            <h2>Hotel Reservations</h2>
+            <p>Find and book accommodations tailored to your needs.</p>
+        </div>
+        <div class="service">
+            <a href="tour.html">
+            <h2>Tour Packages</h2>
+            <p>Explore curated tour packages for various destinations.</p>
+        </div>
+    </section>
+   
+
+    
+
+    <div class="container">
+        <div class="content">
+            <div class="image">
+                <img src="images/pic1.jpg" alt="Image 1">
+            </div>
+            <div class="image">
+                <img src="images/pic2.jpg" alt="Image 2">
+            </div>
+            <div class="image">
+                <img src="images/pic3.jpg" alt="Image 3">
+            </div>
+            <div class="image">
+                <img src="images/pic4.jpg" alt="Image 4">
+            </div>
+            <div class="image">
+                <img src="images/pic5.jpg" alt="Image 5">
+            </div>
+            <div class="image">
+                <img src="images/pic7.jpg" alt="Image 6">
+            </div>
+            <div class="image">
+                <img src="images/pic8.jpg" alt="Image 7">
+            </div>
+            <div class="image">
+                <img src="images/pic9.jpg" alt="Image 8">
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <footer>
+        &copy; 2024 Travel Agency. All rights reserved.
+    </footer>
+
+    <script>
+        
+        function scrollLeft() {
+            document.querySelector('.container').scrollBy({
+                left: -100,
+                behavior: 'smooth'
+            });
+        }
